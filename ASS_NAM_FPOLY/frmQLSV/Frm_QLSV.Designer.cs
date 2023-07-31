@@ -31,12 +31,18 @@ namespace ASS_NAM_FPOLY.frmQLSV
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.ptbImages = new System.Windows.Forms.PictureBox();
+            this.txtAdress = new System.Windows.Forms.TextBox();
+            this.rbdFemale = new System.Windows.Forms.RadioButton();
+            this.rdbMale = new System.Windows.Forms.RadioButton();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtStudentName = new System.Windows.Forms.TextBox();
+            this.txtStudentCode = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,16 +50,10 @@ namespace ASS_NAM_FPOLY.frmQLSV
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dtg_QLSV = new System.Windows.Forms.DataGridView();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImages)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_QLSV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -69,18 +69,18 @@ namespace ASS_NAM_FPOLY.frmQLSV
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.btnUpdate);
+            this.groupBox1.Controls.Add(this.btnDelete);
+            this.groupBox1.Controls.Add(this.btnSave);
+            this.groupBox1.Controls.Add(this.btnNew);
+            this.groupBox1.Controls.Add(this.ptbImages);
+            this.groupBox1.Controls.Add(this.txtAdress);
+            this.groupBox1.Controls.Add(this.rbdFemale);
+            this.groupBox1.Controls.Add(this.rdbMale);
+            this.groupBox1.Controls.Add(this.txtPhoneNumber);
+            this.groupBox1.Controls.Add(this.txtEmail);
+            this.groupBox1.Controls.Add(this.txtStudentName);
+            this.groupBox1.Controls.Add(this.txtStudentCode);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -94,59 +94,113 @@ namespace ASS_NAM_FPOLY.frmQLSV
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sinh viên";
             // 
-            // radioButton2
+            // btnUpdate
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(214, 183);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(50, 24);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nữ";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(505, 264);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(133, 47);
+            this.btnUpdate.TabIndex = 17;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // btnDelete
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(124, 183);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(62, 24);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nam";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(366, 264);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(133, 47);
+            this.btnDelete.TabIndex = 16;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // btnSave
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(108, 146);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(222, 27);
-            this.textBox4.TabIndex = 9;
+            this.btnSave.Location = new System.Drawing.Point(505, 211);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(133, 47);
+            this.btnSave.TabIndex = 15;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // btnNew
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(108, 110);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(222, 27);
-            this.textBox3.TabIndex = 8;
+            this.btnNew.Location = new System.Drawing.Point(366, 211);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(133, 47);
+            this.btnNew.TabIndex = 14;
+            this.btnNew.Text = "New";
+            this.btnNew.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // ptbImages
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(108, 72);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(222, 27);
-            this.textBox2.TabIndex = 7;
+            this.ptbImages.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptbImages.Location = new System.Drawing.Point(419, 26);
+            this.ptbImages.Name = "ptbImages";
+            this.ptbImages.Size = new System.Drawing.Size(172, 170);
+            this.ptbImages.TabIndex = 13;
+            this.ptbImages.TabStop = false;
             // 
-            // textBox1
+            // txtAdress
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(108, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(222, 27);
-            this.textBox1.TabIndex = 6;
+            this.txtAdress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAdress.Location = new System.Drawing.Point(108, 221);
+            this.txtAdress.Multiline = true;
+            this.txtAdress.Name = "txtAdress";
+            this.txtAdress.Size = new System.Drawing.Size(222, 82);
+            this.txtAdress.TabIndex = 12;
+            // 
+            // rbdFemale
+            // 
+            this.rbdFemale.AutoSize = true;
+            this.rbdFemale.Location = new System.Drawing.Point(214, 183);
+            this.rbdFemale.Name = "rbdFemale";
+            this.rbdFemale.Size = new System.Drawing.Size(50, 24);
+            this.rbdFemale.TabIndex = 11;
+            this.rbdFemale.TabStop = true;
+            this.rbdFemale.Text = "Nữ";
+            this.rbdFemale.UseVisualStyleBackColor = true;
+            // 
+            // rdbMale
+            // 
+            this.rdbMale.AutoSize = true;
+            this.rdbMale.Location = new System.Drawing.Point(124, 183);
+            this.rdbMale.Name = "rdbMale";
+            this.rdbMale.Size = new System.Drawing.Size(62, 24);
+            this.rdbMale.TabIndex = 10;
+            this.rdbMale.TabStop = true;
+            this.rdbMale.Text = "Nam";
+            this.rdbMale.UseVisualStyleBackColor = true;
+            // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPhoneNumber.Location = new System.Drawing.Point(108, 146);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(222, 27);
+            this.txtPhoneNumber.TabIndex = 9;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmail.Location = new System.Drawing.Point(108, 110);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(222, 27);
+            this.txtEmail.TabIndex = 8;
+            // 
+            // txtStudentName
+            // 
+            this.txtStudentName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStudentName.Location = new System.Drawing.Point(108, 72);
+            this.txtStudentName.Name = "txtStudentName";
+            this.txtStudentName.Size = new System.Drawing.Size(222, 27);
+            this.txtStudentName.TabIndex = 7;
+            // 
+            // txtStudentCode
+            // 
+            this.txtStudentCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStudentCode.Location = new System.Drawing.Point(108, 35);
+            this.txtStudentCode.Name = "txtStudentCode";
+            this.txtStudentCode.Size = new System.Drawing.Size(222, 27);
+            this.txtStudentCode.TabIndex = 6;
             // 
             // label7
             // 
@@ -212,60 +266,6 @@ namespace ASS_NAM_FPOLY.frmQLSV
             this.dtg_QLSV.Size = new System.Drawing.Size(855, 257);
             this.dtg_QLSV.TabIndex = 4;
             // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(108, 221);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(222, 82);
-            this.textBox5.TabIndex = 12;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(419, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(172, 170);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(366, 211);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 47);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "New";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(505, 211);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(133, 47);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(366, 264);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(133, 47);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(505, 264);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(133, 47);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Update";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -293,8 +293,8 @@ namespace ASS_NAM_FPOLY.frmQLSV
             this.Text = "Quản Lý Sinh Viên";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImages)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_QLSV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,18 +311,18 @@ namespace ASS_NAM_FPOLY.frmQLSV
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtPhoneNumber;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtStudentName;
+        private System.Windows.Forms.TextBox txtStudentCode;
+        private System.Windows.Forms.RadioButton rbdFemale;
+        private System.Windows.Forms.RadioButton rdbMale;
+        private System.Windows.Forms.TextBox txtAdress;
+        private System.Windows.Forms.PictureBox ptbImages;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Button button5;
     }
 }

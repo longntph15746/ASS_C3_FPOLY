@@ -30,28 +30,28 @@ namespace ASS_NAM_FPOLY.frmQLĐSV
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtStudentCodeSearch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblStudentName = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPhysicalEducation = new System.Windows.Forms.TextBox();
+            this.txtInformatics = new System.Windows.Forms.TextBox();
+            this.txtEnglish = new System.Windows.Forms.TextBox();
+            this.txtStudentCode = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btn_Update = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
             this.dtg_QLĐSV = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -63,8 +63,8 @@ namespace ASS_NAM_FPOLY.frmQLĐSV
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.btnSearch);
+            this.groupBox1.Controls.Add(this.txtStudentCodeSearch);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox1.Location = new System.Drawing.Point(134, 102);
@@ -74,22 +74,22 @@ namespace ASS_NAM_FPOLY.frmQLĐSV
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm";
             // 
-            // button1
+            // btnSearch
             // 
-            this.button1.Location = new System.Drawing.Point(392, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 41);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSearch.Location = new System.Drawing.Point(392, 19);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(129, 41);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtStudentCodeSearch
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(121, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 27);
-            this.textBox1.TabIndex = 1;
+            this.txtStudentCodeSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStudentCodeSearch.Location = new System.Drawing.Point(121, 27);
+            this.txtStudentCodeSearch.Name = "txtStudentCodeSearch";
+            this.txtStudentCodeSearch.Size = new System.Drawing.Size(214, 27);
+            this.txtStudentCodeSearch.TabIndex = 1;
             // 
             // label2
             // 
@@ -113,13 +113,13 @@ namespace ASS_NAM_FPOLY.frmQLĐSV
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.lblStudentName);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtPhysicalEducation);
+            this.groupBox2.Controls.Add(this.txtInformatics);
+            this.groupBox2.Controls.Add(this.txtEnglish);
+            this.groupBox2.Controls.Add(this.txtStudentCode);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
@@ -132,15 +132,15 @@ namespace ASS_NAM_FPOLY.frmQLĐSV
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin ";
             // 
-            // label10
+            // lblStudentName
             // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Blue;
-            this.label10.Location = new System.Drawing.Point(119, 43);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 20);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "label10";
+            this.lblStudentName.AutoSize = true;
+            this.lblStudentName.ForeColor = System.Drawing.Color.Blue;
+            this.lblStudentName.Location = new System.Drawing.Point(119, 43);
+            this.lblStudentName.Name = "lblStudentName";
+            this.lblStudentName.Size = new System.Drawing.Size(58, 20);
+            this.lblStudentName.TabIndex = 11;
+            this.lblStudentName.Text = "label10";
             // 
             // label9
             // 
@@ -164,37 +164,37 @@ namespace ASS_NAM_FPOLY.frmQLĐSV
             this.label8.TabIndex = 9;
             this.label8.Text = "Điểm TB:";
             // 
-            // textBox5
+            // txtPhysicalEducation
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(121, 199);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(136, 27);
-            this.textBox5.TabIndex = 8;
+            this.txtPhysicalEducation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPhysicalEducation.Location = new System.Drawing.Point(121, 199);
+            this.txtPhysicalEducation.Name = "txtPhysicalEducation";
+            this.txtPhysicalEducation.Size = new System.Drawing.Size(136, 27);
+            this.txtPhysicalEducation.TabIndex = 8;
             // 
-            // textBox4
+            // txtInformatics
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(121, 160);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(134, 27);
-            this.textBox4.TabIndex = 7;
+            this.txtInformatics.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtInformatics.Location = new System.Drawing.Point(121, 160);
+            this.txtInformatics.Name = "txtInformatics";
+            this.txtInformatics.Size = new System.Drawing.Size(134, 27);
+            this.txtInformatics.TabIndex = 7;
             // 
-            // textBox3
+            // txtEnglish
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(121, 120);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(134, 27);
-            this.textBox3.TabIndex = 6;
+            this.txtEnglish.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEnglish.Location = new System.Drawing.Point(121, 120);
+            this.txtEnglish.Name = "txtEnglish";
+            this.txtEnglish.Size = new System.Drawing.Size(134, 27);
+            this.txtEnglish.TabIndex = 6;
             // 
-            // textBox2
+            // txtStudentCode
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(121, 80);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(134, 27);
-            this.textBox2.TabIndex = 5;
+            this.txtStudentCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStudentCode.Location = new System.Drawing.Point(121, 80);
+            this.txtStudentCode.Name = "txtStudentCode";
+            this.txtStudentCode.Size = new System.Drawing.Size(134, 27);
+            this.txtStudentCode.TabIndex = 5;
             // 
             // label7
             // 
@@ -243,10 +243,10 @@ namespace ASS_NAM_FPOLY.frmQLĐSV
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button6);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.button5);
+            this.groupBox3.Controls.Add(this.btn_Update);
+            this.groupBox3.Controls.Add(this.btnDelete);
+            this.groupBox3.Controls.Add(this.btnSave);
+            this.groupBox3.Controls.Add(this.btnNew);
             this.groupBox3.Location = new System.Drawing.Point(503, 186);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(176, 244);
@@ -254,41 +254,41 @@ namespace ASS_NAM_FPOLY.frmQLĐSV
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Chức năng";
             // 
-            // button6
+            // btn_Update
             // 
-            this.button6.Location = new System.Drawing.Point(32, 163);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(111, 34);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Update";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn_Update.Location = new System.Drawing.Point(32, 163);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Size = new System.Drawing.Size(111, 34);
+            this.btn_Update.TabIndex = 6;
+            this.btn_Update.Text = "Update";
+            this.btn_Update.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnDelete
             // 
-            this.button3.Location = new System.Drawing.Point(32, 123);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(111, 34);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(32, 123);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(111, 34);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnSave
             // 
-            this.button4.Location = new System.Drawing.Point(32, 83);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(111, 34);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Save";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnSave.Location = new System.Drawing.Point(32, 83);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(111, 34);
+            this.btnSave.TabIndex = 4;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnNew
             // 
-            this.button5.Location = new System.Drawing.Point(32, 43);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(111, 34);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "New";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnNew.Location = new System.Drawing.Point(32, 43);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(111, 34);
+            this.btnNew.TabIndex = 5;
+            this.btnNew.Text = "New";
+            this.btnNew.UseVisualStyleBackColor = true;
             // 
             // dtg_QLĐSV
             // 
@@ -355,28 +355,28 @@ namespace ASS_NAM_FPOLY.frmQLĐSV
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtStudentCodeSearch;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dtg_QLĐSV;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_Update;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtStudentCode;
+        private System.Windows.Forms.TextBox txtPhysicalEducation;
+        private System.Windows.Forms.TextBox txtInformatics;
+        private System.Windows.Forms.TextBox txtEnglish;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblStudentName;
         private System.Windows.Forms.Label label11;
     }
 }
