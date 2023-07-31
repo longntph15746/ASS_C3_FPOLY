@@ -61,7 +61,7 @@ namespace ASS_NAM_FPOLY.frmQLSV
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(259, 13);
+            this.label1.Location = new System.Drawing.Point(286, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 45);
             this.label1.TabIndex = 2;
@@ -87,7 +87,7 @@ namespace ASS_NAM_FPOLY.frmQLSV
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(91, 61);
+            this.groupBox1.Location = new System.Drawing.Point(101, 61);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(655, 323);
             this.groupBox1.TabIndex = 3;
@@ -129,6 +129,7 @@ namespace ASS_NAM_FPOLY.frmQLSV
             this.btnNew.TabIndex = 14;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // ptbImages
             // 
@@ -162,7 +163,7 @@ namespace ASS_NAM_FPOLY.frmQLSV
             // rdbMale
             // 
             this.rdbMale.AutoSize = true;
-            this.rdbMale.Location = new System.Drawing.Point(124, 183);
+            this.rdbMale.Location = new System.Drawing.Point(108, 183);
             this.rdbMale.Name = "rdbMale";
             this.rdbMale.Size = new System.Drawing.Size(62, 24);
             this.rdbMale.TabIndex = 10;

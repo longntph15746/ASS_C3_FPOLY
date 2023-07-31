@@ -1,4 +1,6 @@
-﻿using ASS_NAM_FPOLY.frmQLĐSV;
+﻿using ASS_NAM_FPOLY.DTO;
+using ASS_NAM_FPOLY.frmQLĐSV;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +25,11 @@ namespace ASS_NAM_FPOLY.frmQLSV
             Frm_QLĐSV frmQLĐSV = new Frm_QLĐSV();
             frmQLĐSV.Show();
             this.Hide();
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

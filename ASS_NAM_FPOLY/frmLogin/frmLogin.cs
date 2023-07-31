@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ASS_NAM_FPOLY.Database;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +16,9 @@ namespace ASS_NAM_FPOLY.frmLogin
     {
         public frmLogin()
         {
+
             InitializeComponent();
+            YourDbContext DbContext = new YourDbContext();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
