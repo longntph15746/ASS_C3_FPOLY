@@ -25,12 +25,13 @@ namespace ASS_NAM_FPOLY.frmLogin
             if (IsLoginValid(username, password))
             {
                 Frm_Action frmAction = new Frm_Action();
-            frmAction.Show();
-            this.Hide();
+                MessageBox.Show("Login Succesfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frmAction.Show();            
+                this.Hide();
             }
             else
             {
-                MessageBox.Show("Thông tin đăng nhập không đúng. Vui lòng thử lại!", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Login Failed", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private bool IsLoginValid(string username, string password)
