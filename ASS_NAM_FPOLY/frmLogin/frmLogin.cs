@@ -40,7 +40,7 @@ namespace ASS_NAM_FPOLY.frmLogin
         }
         private bool IsLoginValid(string username, string password)
         {
-            return (username == "admin" && password == "123");
+            return (username == "" && password == "");
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

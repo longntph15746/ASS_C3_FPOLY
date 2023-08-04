@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ASS_NAM_FPOLY.DTO
 {
-    class STUDENTS
+    public class STUDENTS
     {
         [Key]
         [MaxLength(50)]
@@ -23,7 +23,7 @@ namespace ASS_NAM_FPOLY.DTO
         [MaxLength(15)]
         public string Sdt { get; set; }
 
-        public bool Gioitinh { get; set; }
+        public string Gioitinh { get; set; }
 
         [MaxLength(50)]
         public string Diachi { get; set; }
@@ -31,9 +31,5 @@ namespace ASS_NAM_FPOLY.DTO
         [MaxLength(50)]
         public string Hinh { get; set; }
 
-        [ForeignKey("ID")]
-        public string ID { get; set; }
-
-        public virtual GRADE Grade { get; set; }
     }
 }

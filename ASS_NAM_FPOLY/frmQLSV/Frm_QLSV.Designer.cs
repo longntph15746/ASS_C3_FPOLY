@@ -102,6 +102,7 @@ namespace ASS_NAM_FPOLY.frmQLSV
             this.btnUpdate.TabIndex = 17;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -111,6 +112,7 @@ namespace ASS_NAM_FPOLY.frmQLSV
             this.btnDelete.TabIndex = 16;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSave
             // 
@@ -120,6 +122,7 @@ namespace ASS_NAM_FPOLY.frmQLSV
             this.btnSave.TabIndex = 15;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // btnNew
             // 
@@ -139,6 +142,7 @@ namespace ASS_NAM_FPOLY.frmQLSV
             this.ptbImages.Size = new System.Drawing.Size(172, 170);
             this.ptbImages.TabIndex = 13;
             this.ptbImages.TabStop = false;
+            this.ptbImages.Click += new System.EventHandler(this.ptbImages_Click);
             // 
             // txtAdress
             // 
@@ -266,6 +270,7 @@ namespace ASS_NAM_FPOLY.frmQLSV
             this.dtg_QLSV.RowTemplate.Height = 29;
             this.dtg_QLSV.Size = new System.Drawing.Size(855, 257);
             this.dtg_QLSV.TabIndex = 4;
+            this.dtg_QLSV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_QLSV_CellClick);
             // 
             // button5
             // 
@@ -292,6 +297,7 @@ namespace ASS_NAM_FPOLY.frmQLSV
             this.Name = "Frm_QLSV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Sinh Viên";
+            this.Load += new System.EventHandler(this.Frm_QLSV_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImages)).EndInit();
